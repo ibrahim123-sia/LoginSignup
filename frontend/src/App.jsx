@@ -1,7 +1,15 @@
+import { Provider } from "react-redux";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import Register from "./Pages/Register";
+
 export default function App() {
-  return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+  return;
+  <Provider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="register" element={<Register />} />
+      </Routes>
+    </BrowserRouter>
+  </Provider>;
 }
