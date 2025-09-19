@@ -4,12 +4,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Register from "./Pages/Register";
 
 export default function App() {
-  return;
-  <Provider>
+  return (
     <BrowserRouter>
       <Routes>
-        <Route path="register" element={<Register />} />
+        <Route path="/" element={<Register />} />
       </Routes>
     </BrowserRouter>
-  </Provider>;
+  );
 }
